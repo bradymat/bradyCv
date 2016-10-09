@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navbar from './navbar'
 
 class App extends Component {
 
@@ -7,7 +8,12 @@ class App extends Component {
   }
 
   render () {
-    return <h1>Welcome to {this.props.name}</h1>
+
+    return (
+    <div>
+    <Navbar/>
+    <h1>Welcome to {this.props.name}</h1>
+    </div>)
   }
 
 }
