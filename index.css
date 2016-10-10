@@ -52,11 +52,13 @@ a:hover{
   object-fit: scale-down;
   /*background-image: url('public/images/macbookdesk.jpg');*/
   background-position-y: 830px;
-  background-image: url('public/images/cvbanner.png');
+  background-image: url('http://www.warrenchandler.com/wp-content/plugins/photo-real-mockups/images/laptop-slant-desk2-half-right.jpg');
   z-index: 1;
   /*-webkit-clip-path: polygon(0 0, 1600px 13%, 1600px 87%, 0 100%);*/
 }
 .image img{
+  max-width: 30%;
+  max-height: 30%;
   margin: 50px 0 0 20%;
   border-radius: 50%;
   position: absolute;
