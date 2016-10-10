@@ -3,37 +3,48 @@ body{
   padding: 0 0 0 0;
 }
 main {
-  font-family: arial;
+  font-family: 'arial narrow';
   font-weight: 300;
   font-size: 20px;
-  text-align: center;
-  color: white;
+  color: #fff;
 }
 a{
   text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: none;
 }
 .bannerImage{
-  height: 500px;
+  height: 600px;
   width: 100%;
   object-fit: scale-down;
-  background-image: url('public/images/macbookdesk.jpg');
+  /*background-image: url('public/images/macbookdesk.jpg');*/
+  background-position-y: 900px;
+  background-image: url('public/images/cvbanner.png');
+  z-index: 1;
   /*-webkit-clip-path: polygon(0 0, 1600px 13%, 1600px 87%, 0 100%);*/
 }
+.image img{
+  margin: 105px 0 0 20%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 20;
+}
 .name{
-  height: 150px;
+  height: auto;
   width: 500px;
   position: absolute;
-  border: 3px solid white;
-  border-right: 15px solid white;
-  margin: 0 33vw 0 33vw;
+  border: 3px solid #fff;
+  margin: 150px 0 0 33%;
+  border-radius: 2%;
   transform-origin: left;
-  transform: skewX(-15deg);
-  background-color: #FDE3A7;
+  transform: skewX(-5deg);
+  text-align: right;
+  padding-right: 7vw;
+  background-color: #000;
   opacity: 0.7;
-  z-index: 1
-}
-.nameText{
-  z-index: 50;
 }
 .navbar{
   display: flex;
