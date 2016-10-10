@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 import Navbar from './navbar'
+import About from './About'
+import Skills from './skills'
+import Experience from './experience'
+import Contact from './contact'
+
+
+
 
 class App extends Component {
 
@@ -7,10 +14,11 @@ class App extends Component {
     super(props)
     this.state = {
       navButtons: [
-        {id: 0, title: 'Home', href: '#'},
-        {id: 1, title: 'Skills', href: '#'},
-        {id: 2, title: 'Experience', href: '#'},
-        {id: 3, title: 'Contact', href: '#'}
+        {id: 0, title: 'Home', href: '#home'},
+        {id: 1, title: 'About', href: '#about'},
+        {id: 2, title: 'Skills', href: '#skills'},
+        {id: 3, title: 'Experience', href: '#experience'},
+        {id: 4, title: 'Contact', href: '#contact'}
       ]
     }
   }
@@ -20,7 +28,11 @@ class App extends Component {
     return (
     <div>
     <Navbar navButtons={this.state.navButtons}/>
-    <h1>Welcome to {this.props.name}</h1>
+    <About/>
+    <Skills/>
+    <Experience/>
+    <Contact/>
+
     </div>)
   }
 
